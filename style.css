@@ -740,3 +740,211 @@ textarea:focus {
     }
 
 }
+/* ==================================================
+   ÁREA DOCENTE
+   ================================================== */
+
+
+.pagina-docente {
+    min-height: 100vh;
+    background: #f5e9dd;
+}
+
+
+.docente {
+    max-width: 1000px;
+    margin: auto;
+    padding: 70px 25px;
+}
+
+
+/* LOGIN */
+
+#login {
+    max-width: 500px;
+    margin: 70px auto;
+
+    background: white;
+
+    padding: 50px;
+
+    text-align: center;
+
+    box-shadow:
+        0 15px 40px rgba(70, 40, 25, 0.12);
+}
+
+
+.docente-icon {
+    font-size: 50px;
+}
+
+
+#login h1 {
+    color: #633b2d;
+    font-size: 40px;
+    margin: 15px 0;
+}
+
+
+#login p {
+    color: #765d50;
+    margin-bottom: 25px;
+}
+
+
+#password {
+    width: 100%;
+
+    padding: 14px;
+
+    border: 1px solid #ddc9ba;
+
+    margin-bottom: 15px;
+
+    font-family: inherit;
+
+    font-size: 16px;
+}
+
+
+#login button {
+    background: #7b3f28;
+
+    color: white;
+
+    border: none;
+
+    padding: 13px 30px;
+
+    font-family: inherit;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    border-radius: 25px;
+
+    transition: 0.3s;
+}
+
+
+#login button:hover {
+    background: #b36a4d;
+
+    transform: translateY(-3px);
+}
+
+
+#error {
+    min-height: 25px;
+
+    color: #a04f32 !important;
+
+    margin: 15px 0 !important;
+}
+
+
+#login a {
+    color: #7b3f28;
+
+    text-decoration: none;
+}
+
+
+/* DOCUMENTACIÓN */
+
+#contenidoDocente {
+    display: none;
+
+    background: white;
+
+    padding: 55px;
+
+    box-shadow:
+        0 15px 40px rgba(70, 40, 25, 0.12);
+}
+
+
+#contenidoDocente > h1 {
+    color: #633b2d;
+
+    font-size: 45px;
+
+    margin-bottom: 10px;
+}
+
+
+#contenidoDocente > p {
+    color: #765d50;
+
+    margin-bottom: 40px;
+}
+
+
+#contenidoDocente section {
+    padding: 30px 0;
+
+    border-top:
+        1px solid #ead8c9;
+}
+
+
+#contenidoDocente section h2 {
+    color: #7b3f28;
+
+    margin-bottom: 18px;
+}
+
+
+#contenidoDocente section p,
+#contenidoDocente li {
+    color: #765d50;
+}
+
+
+#contenidoDocente li {
+    margin: 10px 0;
+}
+
+
+.volver {
+    display: inline-block;
+
+    margin-top: 30px;
+
+    padding: 13px 25px;
+
+    background: #7b3f28;
+
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 25px;
+
+    transition: 0.3s;
+}
+
+
+.volver:hover {
+    background: #b36a4d;
+
+    transform: translateY(-3px);
+}
+
+
+@media (max-width: 600px) {
+
+
+    #login,
+    #contenidoDocente {
+        padding: 30px 20px;
+    }
+
+
+    #contenidoDocente > h1 {
+        font-size: 35px;
+    }
+
+}
