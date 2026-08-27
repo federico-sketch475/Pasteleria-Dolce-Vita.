@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>Área Docente | Dolce Vita</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body class="pagina-docente">
+
+
+<main class="docente">
+
+
+<!-- ================= LOGIN ================= -->
+
+<div id="login">
+
+
+    <div class="docente-icon">
+        🔐
+    </div>
+
+
+    <h1>
+        Área Docente
+    </h1>
+
+
+    <p>
+
+        Sección exclusiva para la documentación
+        técnica del proyecto Dolce Vita.
+
+    </p>
+
+
+    <input
+        type="password"
+        id="password"
+        placeholder="Ingrese la contraseña"
+    >
+
+
+    <button onclick="entrarDocente()">
+        Ingresar
+    </button>
+
+
+    <p id="error"></p>
+
+
+    <a href="index.html">
+        ← Volver al sitio
+    </a>
+
+
+</div>
+
+
+
+<!-- ================= DOCUMENTACIÓN ================= -->
+
+<div id="contenidoDocente">
+
+
+    <h1>
+        Memoria técnica
+    </h1>
+
+
+    <p>
+
+        Documentación del desarrollo del sitio web
+        de la pastelería artesanal Dolce Vita.
+
+    </p>
+
+
+
+    <!-- ================= HTML ================= -->
+
+    <section>
+
+        <h2>
+            1. Etiquetas semánticas HTML5
+        </h2>
+
+
+        <p>
+
+            Se utilizaron etiquetas semánticas de HTML5
+            para organizar correctamente la estructura
+            y mejorar la comprensión del contenido.
+
+        </p>
+
+
+        <ul>
+
+            <li>
+                <strong>&lt;header&gt;</strong>:
+                contiene el encabezado y la navegación.
+            </li>
+
+            <li>
+                <strong>&lt;nav&gt;</strong>:
+                contiene el menú principal.
+            </li>
+
+            <li>
+                <strong>&lt;main&gt;</strong>:
+                contiene el contenido principal.
+            </li>
+
+            <li>
+                <strong>&lt;section&gt;</strong>:
+                divide el contenido en diferentes secciones.
+            </li>
+
+            <li>
+                <strong>&lt;article&gt;</strong>:
+                se utiliza para productos y contenidos independientes.
+            </li>
+
+            <li>
+                <strong>&lt;footer&gt;</strong>:
+                contiene la información final del sitio.
+            </li>
+
+        </ul>
+
+    </section>
+
+
+
+    <!-- ================= TECNOLOGÍAS ================= -->
+
+    <section>
+
+        <h2>
+            2. Stack tecnológico y estilos
+        </h2>
+
+
+        <ul>
+
+            <li>
+                HTML5 para la estructura del sitio.
+            </li>
+
+            <li>
+                CSS3 para el diseño y presentación visual.
+            </li>
+
+            <li>
+                JavaScript para la interactividad.
+            </li>
+
+            <li>
+                CSS Grid para organizar tarjetas y contenidos.
+            </li>
+
+            <li>
+                Flexbox para la navegación y diferentes elementos.
+            </li>
+
+            <li>
+                Media Queries para adaptar el sitio a diferentes pantallas.
+            </li>
+
+        </ul>
+
+    </section>
+
+
+
+    <!-- ================= RESPONSIVE ================= -->
+
+    <section>
+
+        <h2>
+            3. Diseño Responsive
+        </h2>
+
+
+        <p>
+
+            El sitio fue desarrollado para adaptarse
+            a computadoras, tablets y teléfonos celulares.
+
+            Se utilizaron Media Queries para modificar
+            la distribución de las columnas, tamaños
+            y navegación cuando disminuye el ancho
+            de la pantalla.
+
+        </p>
+
+    </section>
+
+
+
+    <!-- ================= ARQUITECTURA ================= -->
+
+    <section>
+
+        <h2>
+            4. Justificación de la arquitectura
+        </h2>
+
+
+        <p>
+
+            Se eligió inicialmente una arquitectura
+            One-Page porque permite presentar la información
+            de la pastelería de forma organizada dentro
+            de una única página.
+
+        </p>
+
+
+        <p>
+
+            La navegación utiliza anclajes internos para
+            desplazarse rápidamente entre las diferentes
+            secciones.
+
+        </p>
+
+
+        <p>
+
+            Además, mediante JavaScript se identifica
+            la sección visible durante el desplazamiento
+            y se activa el enlace correspondiente
+            en el menú.
+
+        </p>
+
+    </section>
+
+
+
+    <!-- ================= INTERNACIONALIZACIÓN ================= -->
+
+    <section>
+
+        <h2>
+            5. Internacionalización
+        </h2>
+
+
+        <p>
+
+            El sitio presenta información en español
+            e italiano para reforzar la identidad
+            de la pastelería y su inspiración italiana.
+
+        </p>
+
+
+        <p>
+
+            JavaScript permite cambiar dinámicamente
+            entre ambos idiomas mediante un botón
+            ubicado en el menú principal.
+
+        </p>
+
+    </section>
+
+
+
+    <!-- ================= RECURSOS ================= -->
+
+    <section>
+
+        <h2>
+            6. Recursos externos y accesibilidad
+        </h2>
+
+
+        <p>
+
+            Se utilizaron imágenes provenientes de
+            repositorios externos.
+
+            Las imágenes cuentan con atributos
+            <strong>alt</strong> descriptivos que explican
+            su contenido para mejorar la accesibilidad
+            y aportar información a los motores de búsqueda.
+
+        </p>
+
+    </section>
+
+
+
+    <!-- ================= UX ================= -->
+
+    <section>
+
+        <h2>
+            7. Interactividad y experiencia de usuario
+        </h2>
+
+
+        <p>
+
+            Se incorporaron botones de consulta
+            funcionales en cada producto.
+
+            Al seleccionar una torta, el usuario
+            es dirigido al formulario de contacto
+            y el mensaje se completa automáticamente
+            con el producto seleccionado.
+
+        </p>
+
+
+        <p>
+
+            También se incorporaron efectos hover
+            en productos y botones, animaciones
+            visuales y un indicador de sección activa
+            en el menú.
+
+        </p>
+
+    </section>
+
+
+
+    <!-- ================= CONCLUSIÓN ================= -->
+
+    <section>
+
+        <h2>
+            8. Conclusión
+        </h2>
+
+
+        <p>
+
+            El proyecto busca combinar una identidad
+            visual inspirada en la pastelería italiana
+            con una estructura web moderna, accesible
+            y adaptable a diferentes dispositivos.
+
+            Las mejoras implementadas buscan facilitar
+            la navegación y generar una experiencia
+            más clara e intuitiva para el usuario.
+
+        </p>
+
+    </section>
+
+
+
+    <a
+        href="index.html"
+        class="volver">
+
+        ← Volver a Dolce Vita
+
+    </a>
+
+
+</div>
+
+
+</main>
+
+
+
+<script src="docente.js"></script>
+
+
+</body>
+
+</html>
