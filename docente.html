@@ -2,389 +2,741 @@
 <html lang="es">
 
 <head>
-
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="viewport"
-        content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Dolce Vita - Pastelería artesanal italiana en Uruguay. Tortas, postres y especialidades elaboradas con dedicación.">
 
-    <title>Área Docente | Dolce Vita</title>
+    <title>Dolce Vita | Pastelería Italiana</title>
 
     <link rel="stylesheet" href="style.css">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+        rel="stylesheet">
 </head>
 
+<body>
 
-<body class="pagina-docente">
+    <!-- ================= NAVBAR ================= -->
 
+    <header class="navbar">
 
-<main class="docente">
+        <a href="#inicio" class="logo">
+            <span class="logo-icon">🍰</span>
+            <span>Dolce Vita</span>
+        </a>
 
+        <nav id="menu">
 
-<!-- ================= LOGIN ================= -->
+            <a href="#inicio" class="nav-link active">Inicio</a>
+            <a href="#historia" class="nav-link">Nuestra historia</a>
+            <a href="#especialidades" class="nav-link">Especialidades</a>
+            <a href="#experiencia" class="nav-link">Experiencia</a>
+            <a href="#italiano" class="nav-link">Italiano</a>
+            <a href="#contacto" class="nav-link">Contacto</a>
 
-<div id="login">
+        </nav>
 
+        <div class="nav-buttons">
 
-    <div class="docente-icon">
-        🔐
-    </div>
+            <button id="themeButton" class="icon-button" aria-label="Cambiar modo de color">
+                🌓
+            </button>
 
+            <button id="menuButton" class="menu-button" aria-label="Abrir menú">
+                ☰
+            </button>
 
-    <h1>
-        Área Docente
-    </h1>
+        </div>
 
+    </header>
 
-    <p>
 
-        Sección exclusiva para la documentación
-        técnica del proyecto Dolce Vita.
+    <main>
 
-    </p>
+        <!-- ================= INICIO ================= -->
 
+        <section id="inicio" class="hero">
 
-    <input
-        type="password"
-        id="password"
-        placeholder="Ingrese la contraseña"
-    >
+            <div class="hero-content">
 
+                <span class="tag">
+                    🇮🇹 Pastelería artesanal italiana
+                </span>
 
-    <button onclick="entrarDocente()">
-        Ingresar
-    </button>
+                <h1>
+                    Un pequeño pedacito de
+                    <span>Italia</span> en Uruguay.
+                </h1>
 
+                <p>
+                    En Dolce Vita creamos tortas y postres artesanales
+                    inspirados en la tradición italiana, combinando recetas
+                    clásicas con un toque moderno.
+                </p>
 
-    <p id="error"></p>
+                <div class="hero-buttons">
 
+                    <a href="#especialidades" class="primary-button">
+                        Ver especialidades →
+                    </a>
 
-    <a href="index.html">
-        ← Volver al sitio
-    </a>
+                    <a href="#historia" class="secondary-button">
+                        Conocer nuestra historia
+                    </a>
 
+                </div>
 
-</div>
+                <div class="hero-info">
 
+                    <div>
+                        <strong>100%</strong>
+                        <span>Artesanal</span>
+                    </div>
 
+                    <div>
+                        <strong>🇮🇹</strong>
+                        <span>Inspiración italiana</span>
+                    </div>
 
-<!-- ================= DOCUMENTACIÓN ================= -->
+                    <div>
+                        <strong>❤️</strong>
+                        <span>Hecho con cariño</span>
+                    </div>
 
-<div id="contenidoDocente">
+                </div>
 
+            </div>
 
-    <h1>
-        Memoria técnica
-    </h1>
 
+            <div class="hero-image">
 
-    <p>
+                <div class="image-card">
 
-        Documentación del desarrollo del sitio web
-        de la pastelería artesanal Dolce Vita.
+                    <img
+                        src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=1000&q=85"
+                        alt="Torta artesanal de chocolate decorada con crema y frutos rojos">
 
-    </p>
+                    <div class="image-label">
+                        <span>Dolce Vita</span>
+                        <small>La dolcezza italiana</small>
+                    </div>
 
+                </div>
 
+            </div>
 
-    <!-- ================= HTML ================= -->
+        </section>
 
-    <section>
 
-        <h2>
-            1. Etiquetas semánticas HTML5
-        </h2>
+        <!-- ================= HISTORIA ================= -->
 
+        <section id="historia" class="section">
 
-        <p>
+            <div class="section-heading">
 
-            Se utilizaron etiquetas semánticas de HTML5
-            para organizar correctamente la estructura
-            y mejorar la comprensión del contenido.
+                <span class="section-number">01</span>
 
-        </p>
+                <div>
+                    <span class="eyebrow">CHI SIAMO · QUIÉNES SOMOS</span>
 
+                    <h2>
+                        Nuestra historia
+                    </h2>
+                </div>
 
-        <ul>
+            </div>
 
-            <li>
-                <strong>&lt;header&gt;</strong>:
-                contiene el encabezado y la navegación.
-            </li>
 
-            <li>
-                <strong>&lt;nav&gt;</strong>:
-                contiene el menú principal.
-            </li>
+            <div class="history-grid">
 
-            <li>
-                <strong>&lt;main&gt;</strong>:
-                contiene el contenido principal.
-            </li>
+                <article class="history-text">
 
-            <li>
-                <strong>&lt;section&gt;</strong>:
-                divide el contenido en diferentes secciones.
-            </li>
+                    <p class="large-text">
+                        Dolce Vita nació de una idea sencilla:
+                        <strong>crear momentos especiales a través de la pastelería.</strong>
+                    </p>
 
-            <li>
-                <strong>&lt;article&gt;</strong>:
-                se utiliza para productos y contenidos independientes.
-            </li>
+                    <p>
+                        Nuestra inspiración viene de Italia, un país conocido
+                        por su cultura, sus tradiciones y, especialmente,
+                        por su pasión por la comida.
+                    </p>
 
-            <li>
-                <strong>&lt;footer&gt;</strong>:
-                contiene la información final del sitio.
-            </li>
+                    <p>
+                        Comenzamos imaginando una pequeña pastelería donde
+                        cada torta tuviera algo diferente. No queríamos
+                        solamente vender postres, sino crear productos que
+                        fueran parte de cumpleaños, reuniones familiares,
+                        celebraciones y momentos importantes.
+                    </p>
 
-        </ul>
+                    <p>
+                        Por eso cada preparación se piensa cuidadosamente:
+                        desde la elección de los ingredientes hasta la
+                        decoración final.
+                    </p>
 
-    </section>
+                </article>
 
 
+                <article class="story-card">
 
-    <!-- ================= TECNOLOGÍAS ================= -->
+                    <div class="story-icon">🇮🇹</div>
 
-    <section>
+                    <span>LA NOSTRA STORIA</span>
 
-        <h2>
-            2. Stack tecnológico y estilos
-        </h2>
+                    <h3>
+                        Tradición italiana,
+                        espíritu uruguayo.
+                    </h3>
 
+                    <p>
+                        Una combinación entre recetas inspiradas en Italia
+                        y el cariño de una pastelería creada en Uruguay.
+                    </p>
 
-        <ul>
+                    <div class="story-line"></div>
 
-            <li>
-                HTML5 para la estructura del sitio.
-            </li>
+                    <small>
+                        "La vita è più dolce con una buona torta."
+                    </small>
 
-            <li>
-                CSS3 para el diseño y presentación visual.
-            </li>
+                </article>
 
-            <li>
-                JavaScript para la interactividad.
-            </li>
+            </div>
 
-            <li>
-                CSS Grid para organizar tarjetas y contenidos.
-            </li>
+        </section>
 
-            <li>
-                Flexbox para la navegación y diferentes elementos.
-            </li>
 
-            <li>
-                Media Queries para adaptar el sitio a diferentes pantallas.
-            </li>
+        <!-- ================= ESPECIALIDADES ================= -->
 
-        </ul>
+        <section id="especialidades" class="section section-alt">
 
-    </section>
+            <div class="section-heading">
 
+                <span class="section-number">02</span>
 
+                <div>
+                    <span class="eyebrow">IL NOSTRO MENU · NUESTRO MENÚ</span>
 
-    <!-- ================= RESPONSIVE ================= -->
+                    <h2>
+                        Nuestras especialidades
+                    </h2>
 
-    <section>
+                    <p>
+                        Algunas de las preparaciones que representan
+                        el espíritu de Dolce Vita.
+                    </p>
 
-        <h2>
-            3. Diseño Responsive
-        </h2>
+                </div>
 
+            </div>
 
-        <p>
 
-            El sitio fue desarrollado para adaptarse
-            a computadoras, tablets y teléfonos celulares.
+            <div class="products-grid">
 
-            Se utilizaron Media Queries para modificar
-            la distribución de las columnas, tamaños
-            y navegación cuando disminuye el ancho
-            de la pantalla.
 
-        </p>
+                <!-- PRODUCTO 1 -->
 
-    </section>
+                <article class="product-card">
 
+                    <div class="product-image">
 
+                        <img
+                            src="https://images.unsplash.com/photo-1602351447937-745cb720612f?auto=format&fit=crop&w=800&q=85"
+                            alt="Torta de chocolate artesanal con cobertura cremosa">
 
-    <!-- ================= ARQUITECTURA ================= -->
+                        <span class="product-tag">
+                            Más elegida
+                        </span>
 
-    <section>
+                    </div>
 
-        <h2>
-            4. Justificación de la arquitectura
-        </h2>
+                    <div class="product-content">
 
+                        <span class="italian-name">
+                            Torta al Cioccolato
+                        </span>
 
-        <p>
+                        <h3>
+                            Torta de Chocolate
+                        </h3>
 
-            Se eligió inicialmente una arquitectura
-            One-Page porque permite presentar la información
-            de la pastelería de forma organizada dentro
-            de una única página.
+                        <p>
+                            Bizcochuelo húmedo de chocolate,
+                            relleno cremoso y una cobertura
+                            intensa de cacao.
+                        </p>
 
-        </p>
+                        <button class="details-button"
+                            data-product="Torta de Chocolate">
+                            Ver detalles
+                        </button>
 
+                    </div>
 
-        <p>
+                </article>
 
-            La navegación utiliza anclajes internos para
-            desplazarse rápidamente entre las diferentes
-            secciones.
 
-        </p>
+                <!-- PRODUCTO 2 -->
 
+                <article class="product-card">
 
-        <p>
+                    <div class="product-image">
 
-            Además, mediante JavaScript se identifica
-            la sección visible durante el desplazamiento
-            y se activa el enlace correspondiente
-            en el menú.
+                        <img
+                            src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?auto=format&fit=crop&w=800&q=85"
+                            alt="Torta artesanal de vainilla decorada con frutas frescas">
 
-        </p>
+                    </div>
 
-    </section>
+                    <div class="product-content">
 
+                        <span class="italian-name">
+                            Torta alla Vaniglia
+                        </span>
 
+                        <h3>
+                            Torta de Vainilla
+                        </h3>
 
-    <!-- ================= INTERNACIONALIZACIÓN ================= -->
+                        <p>
+                            Bizcochuelo suave de vainilla,
+                            crema ligera y decoración con
+                            frutas frescas.
+                        </p>
 
-    <section>
+                        <button class="details-button"
+                            data-product="Torta de Vainilla">
+                            Ver detalles
+                        </button>
 
-        <h2>
-            5. Internacionalización
-        </h2>
+                    </div>
 
+                </article>
 
-        <p>
 
-            El sitio presenta información en español
-            e italiano para reforzar la identidad
-            de la pastelería y su inspiración italiana.
+                <!-- PRODUCTO 3 -->
 
-        </p>
+                <article class="product-card">
 
+                    <div class="product-image">
 
-        <p>
+                        <img
+                            src="https://images.unsplash.com/photo-1571115177098-24ec42ed204d?auto=format&fit=crop&w=800&q=85"
+                            alt="Tiramisú italiano artesanal servido con cacao">
 
-            JavaScript permite cambiar dinámicamente
-            entre ambos idiomas mediante un botón
-            ubicado en el menú principal.
+                    </div>
 
-        </p>
+                    <div class="product-content">
 
-    </section>
+                        <span class="italian-name">
+                            Tiramisù
+                        </span>
 
+                        <h3>
+                            Tiramisú Italiano
+                        </h3>
 
+                        <p>
+                            Clásico postre italiano preparado
+                            con café, crema de mascarpone
+                            y cacao.
+                        </p>
 
-    <!-- ================= RECURSOS ================= -->
+                        <button class="details-button"
+                            data-product="Tiramisú Italiano">
+                            Ver detalles
+                        </button>
 
-    <section>
+                    </div>
 
-        <h2>
-            6. Recursos externos y accesibilidad
-        </h2>
+                </article>
 
 
-        <p>
+                <!-- PRODUCTO 4 -->
 
-            Se utilizaron imágenes provenientes de
-            repositorios externos.
+                <article class="product-card">
 
-            Las imágenes cuentan con atributos
-            <strong>alt</strong> descriptivos que explican
-            su contenido para mejorar la accesibilidad
-            y aportar información a los motores de búsqueda.
+                    <div class="product-image">
 
-        </p>
+                        <img
+                            src="https://images.unsplash.com/photo-1551024506-0bccd828d307?auto=format&fit=crop&w=800&q=85"
+                            alt="Pequeños postres artesanales decorados con chocolate">
 
-    </section>
+                    </div>
 
+                    <div class="product-content">
 
+                        <span class="italian-name">
+                            Dolci Italiani
+                        </span>
 
-    <!-- ================= UX ================= -->
+                        <h3>
+                            Dulces Italianos
+                        </h3>
 
-    <section>
+                        <p>
+                            Una selección de pequeños postres
+                            ideales para acompañar el café
+                            o compartir.
+                        </p>
 
-        <h2>
-            7. Interactividad y experiencia de usuario
-        </h2>
+                        <button class="details-button"
+                            data-product="Dulces Italianos">
+                            Ver detalles
+                        </button>
 
+                    </div>
 
-        <p>
+                </article>
 
-            Se incorporaron botones de consulta
-            funcionales en cada producto.
+            </div>
 
-            Al seleccionar una torta, el usuario
-            es dirigido al formulario de contacto
-            y el mensaje se completa automáticamente
-            con el producto seleccionado.
+        </section>
 
-        </p>
 
+        <!-- ================= EXPERIENCIA ================= -->
 
-        <p>
+        <section id="experiencia" class="section">
 
-            También se incorporaron efectos hover
-            en productos y botones, animaciones
-            visuales y un indicador de sección activa
-            en el menú.
+            <div class="center-heading">
 
-        </p>
+                <span class="eyebrow">
+                    LA NOSTRA FILOSOFIA
+                </span>
 
-    </section>
+                <h2>
+                    Más que una torta
+                </h2>
 
+                <p>
+                    En Dolce Vita creemos que un buen postre
+                    también puede convertirse en un recuerdo.
+                </p>
 
+            </div>
 
-    <!-- ================= CONCLUSIÓN ================= -->
 
-    <section>
+            <div class="steps-grid">
 
-        <h2>
-            8. Conclusión
-        </h2>
+                <article class="step">
 
+                    <span class="step-number">
+                        01
+                    </span>
 
-        <p>
+                    <div class="step-icon">
+                        🧁
+                    </div>
 
-            El proyecto busca combinar una identidad
-            visual inspirada en la pastelería italiana
-            con una estructura web moderna, accesible
-            y adaptable a diferentes dispositivos.
+                    <h3>
+                        Elegimos
+                    </h3>
 
-            Las mejoras implementadas buscan facilitar
-            la navegación y generar una experiencia
-            más clara e intuitiva para el usuario.
+                    <p>
+                        Seleccionamos cuidadosamente los ingredientes
+                        que utilizamos en cada preparación.
+                    </p>
 
-        </p>
+                </article>
 
-    </section>
 
+                <article class="step">
 
+                    <span class="step-number">
+                        02
+                    </span>
 
-    <a
-        href="index.html"
-        class="volver">
+                    <div class="step-icon">
+                        👩‍🍳
+                    </div>
 
-        ← Volver a Dolce Vita
+                    <h3>
+                        Preparamos
+                    </h3>
 
-    </a>
+                    <p>
+                        Cada torta se elabora de forma artesanal,
+                        cuidando cada detalle.
+                    </p>
 
+                </article>
 
-</div>
 
+                <article class="step">
 
-</main>
+                    <span class="step-number">
+                        03
+                    </span>
 
+                    <div class="step-icon">
+                        🎨
+                    </div>
 
+                    <h3>
+                        Decoramos
+                    </h3>
 
-<script src="docente.js"></script>
+                    <p>
+                        Personalizamos nuestras tortas para que
+                        cada celebración sea diferente.
+                    </p>
 
+                </article>
 
-</body>
 
-</html>
+                <article class="step">
+
+                    <span class="step-number">
+                        04
+                    </span>
+
+                    <div class="step-icon">
+                        ❤️
+                    </div>
+
+                    <h3>
+                        Compartimos
+                    </h3>
+
+                    <p>
+                        Finalmente, nuestro trabajo llega a la mesa
+                        para formar parte de un momento especial.
+                    </p>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= ITALIANO ================= -->
+
+        <section id="italiano" class="italian-section">
+
+            <div class="italian-content">
+
+                <span class="eyebrow">
+                    🇮🇹 PARLIAMO ITALIANO
+                </span>
+
+                <h2>
+                    La nostra pasticceria
+                </h2>
+
+                <p>
+                    Dolce Vita è una pasticceria artigianale
+                    ispirata alla tradizione italiana.
+                </p>
+
+                <p>
+                    Prepariamo torte, dolci e dessert con
+                    ingredienti selezionati e molta attenzione
+                    ai dettagli.
+                </p>
+
+                <p>
+                    La nostra idea è semplice:
+                    <strong>offrire dolci che possano rendere
+                    ogni momento un po' più speciale.</strong>
+                </p>
+
+                <button id="italianButton" class="light-button">
+                    Leggi di più ↓
+                </button>
+
+                <div id="italianMore" class="italian-more">
+
+                    <p>
+                        Ci ispiriamo alla cucina italiana,
+                        ma adattiamo le nostre preparazioni
+                        al gusto e alla cultura uruguaiana.
+                    </p>
+
+                    <p>
+                        Per noi, la pasticceria non è solo
+                        un lavoro: è un modo per condividere
+                        creatività, tradizione e felicità.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="italian-decoration">
+                <span>🍰</span>
+                <span>☕</span>
+                <span>🇮🇹</span>
+            </div>
+
+        </section>
+
+
+        <!-- ================= CONTACTO ================= -->
+
+        <section id="contacto" class="section contact-section">
+
+            <div class="contact-card">
+
+                <div>
+
+                    <span class="eyebrow">
+                        CONTATTI · CONTACTO
+                    </span>
+
+                    <h2>
+                        ¿Querés hacer un pedido?
+                    </h2>
+
+                    <p>
+                        Elegí una de nuestras especialidades
+                        o consultanos para crear una torta
+                        personalizada para tu celebración.
+                    </p>
+
+                </div>
+
+
+                <div class="contact-buttons">
+
+                    <button id="orderButton" class="primary-button">
+                        🍰 Consultar por un pedido
+                    </button>
+
+                    <button id="infoButton" class="secondary-button">
+                        ℹ️ Información del local
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <div id="localInfo" class="local-info">
+
+                <div class="info-item">
+                    <strong>📍 Ubicación</strong>
+                    <span>Uruguay</span>
+                </div>
+
+                <div class="info-item">
+                    <strong>🕐 Horarios</strong>
+                    <span>Lunes a sábado · 09:00 a 19:00</span>
+                </div>
+
+                <div class="info-item">
+                    <strong>📞 Contacto</strong>
+                    <span>099 123 456</span>
+                </div>
+
+                <div class="info-item">
+                    <strong>📧 Email</strong>
+                    <span>dolcevita@email.com</span>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= DOCENTE ================= -->
+
+        <section class="teacher-section">
+
+            <div>
+
+                <span class="eyebrow">
+                    ÁREA ACADÉMICA
+                </span>
+
+                <h2>
+                    ¿Sos docente?
+                </h2>
+
+                <p>
+                    Accedé a la documentación técnica del proyecto,
+                    donde se explica cómo fue desarrollado el sitio.
+                </p>
+
+            </div>
+
+            <a href="docente.html" class="teacher-button">
+                Soy docente →
+            </a>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <div class="footer-main">
+
+            <div>
+
+                <div class="logo footer-logo">
+                    🍰 Dolce Vita
+                </div>
+
+                <p>
+                    Pastelería artesanal italiana
+                    en Uruguay.
+                </p>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <a href="#inicio">Inicio</a>
+                <a href="#historia">Historia</a>
+                <a href="#especialidades">Especialidades</a>
+                <a href="#contacto">Contacto</a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <span>
+                © 2026 Dolce Vita
+            </span>
+
+            <span>
+                Fatto con amore ❤️
+            </span>
+
+        </div>
+
+    </footer>
+
+
+    <!-- ================= MODAL ================= -->
+
+    <div id="modal" class="modal">
+
+        <div class="modal-content">
+
+            <button id="closeModal" class="close-modal">
+                ×
+            </button>
+
+            <span class="eyebrow">
+                DOLCE VITA
+            </span>
+
+            <h2 id="modalTitle">
+                Producto
+           
